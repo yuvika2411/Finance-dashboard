@@ -1,4 +1,4 @@
-Finance Dashboard Backend
+***Finance Dashboard Backend***
 
 A Spring Boot-based backend application for managing financial records with role-based access control. This project allows users to create, view, and delete financial records while enforcing permissions based on user roles.
 
