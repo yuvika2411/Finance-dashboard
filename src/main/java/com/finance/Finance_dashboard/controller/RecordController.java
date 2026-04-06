@@ -6,7 +6,9 @@ import com.finance.Finance_dashboard.service.RecordService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/records")
@@ -30,5 +32,25 @@ public class RecordController {
     public void delete(@PathVariable Long id,
                        @RequestParam Role role) {
         service.delete(id, role);
+    }
+
+    @GetMapping("/filter")
+    public List<FinancialRecord> filter(
+            @RequestParam(required = false) String type,
+            @RequestParam(required = false) String category,
+            @RequestParam(required = false) String startDate,
+            @RequestParam(required = false) String endDate
+    ) {
+        return service.filter(
+                type,
+                category,
+                startDate != null ? LocalDate.parse(startDate) : null,
+                endDate != null ? LocalDate.parse(endDate) : null
+        );
+    }
+
+    @GetMapping("/summary")
+    public Map<String, Object> summary() {
+        return service.getSummary();
     }
 }
