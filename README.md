@@ -1,21 +1,35 @@
-***Finance Dashboard Backend***
+# 💰 Finance Dashboard Backend
 
-A Spring Boot-based backend application for managing financial records with role-based access control. This project allows users to create, view, and delete financial records while enforcing permissions based on user roles.
+A Spring Boot backend application to manage financial records with role-based access, filtering, and dashboard insights.
 
-🚀 Features
-Create financial records (Income / Expense)
-Fetch all records
-Delete records
-Role-based access control (ADMIN, ANALYST, VIEWER)
-MySQL database integration
-RESTful API design
-Tested using Postman
+---
 
-🛠️ Tech Stack
-Java 25
-Spring Boot
-Spring Data JPA
-Hibernate
-MySQL
-Maven
-Postman
+## 🚀 Features
+
+- Create financial records (**Admin only**)
+- View all financial records
+- Delete records (**Admin only**)
+- Filter records by:
+  - Type (INCOME / EXPENSE)
+  - Category
+  - Date range
+- Dashboard Summary:
+  - Total Income
+  - Total Expense
+  - Balance
+- Role-based access control (VIEWER, ANALYST, ADMIN)
+
+---
+
+## 🛠️ Tech Stack
+
+- Java 25
+- Spring Boot 4
+- Spring Data JPA
+- MySQL
+- Lombok
+- Postman
+
+---
+
+## 📂 Project Structure
