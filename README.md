@@ -2,7 +2,6 @@
 
 A Spring Boot backend application to manage financial records with role-based access, filtering, and dashboard insights.
 
----
 
 ## 🚀 Features
 
@@ -19,8 +18,6 @@ A Spring Boot backend application to manage financial records with role-based ac
   - Balance
 - Role-based access control (VIEWER, ANALYST, ADMIN)
 
----
-
 ## 🛠️ Tech Stack
 
 - Java 25
@@ -30,6 +27,3 @@ A Spring Boot backend application to manage financial records with role-based ac
 - Lombok
 - Postman
 
----
-
-## 📂 Project Structure
